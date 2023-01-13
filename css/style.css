@@ -1,9 +1,86 @@
 :root {
-    --body-bg-color: #FAF7FD;
-    --purple: #BB99DD;
+    --body-bg-color: #3b3b3b;
+    --letras: #eaeaea;
+    --hover-color:#996515;
   }
 /* font-family: 'Poppins', sans-serif; */
 
 body{
+    background-color: var(--body-bg-color);
     
+}
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    margin: 15vh auto;
+    width: 300px;
+    
+}
+
+.foto{
+    max-width: 100%;
+    width: 200px;
+    height: 200px;
+    align-self: center;
+    border: var(--letras) 2px solid;
+    padding: 6px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.foto:hover{
+    transition: 0.5s;
+    width: 250px;
+    height: 250px;
+    border-color: var(--hover-color);
+}
+
+.instagram{
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--letras);
+    font-family: 'Poppins', sans-serif;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botao-redes{
+    text-align: center;
+    width: 326px;
+    padding: 5px 0px ;
+    margin-bottom: 16px;
+    color: var(--letras);
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    border: var(--letras) 2px solid;
+    border-radius: 4px;
+    transition: 0.5s;
+    
+}
+
+.botao-redes:hover{
+    border-color: var(--hover-color);
+    font-size: 1.5rem;
+    padding: 8px 10px;
+}
+
+.icones-lista{
+    display: flex;
+    justify-content: space-around;
+}
+
+.icones{
+    stroke: var(--letras);
+}
+
+.icones:hover{
+    stroke: var(--hover-color);
 }
